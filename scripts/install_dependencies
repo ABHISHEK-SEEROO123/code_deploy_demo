@@ -6,3 +6,4 @@ apt-get install -y apache2
 
 # Start Apache2 service
 service apache2 start
+rm -rf /var/www/html/index.html
