@@ -5,14 +5,7 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: install_dependencies
+    - location: install_dependencies.sh
       timeout: 300
-      runas: ubuntu
-    - location: start_server
-      timeout: 300
-      runas: ubuntu
-  ApplicationStop:
-    - location: stop_server
-      timeout: 300
-      runas: ubuntu
-
+      runas: root
+    
